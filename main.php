@@ -20,6 +20,16 @@
 <div class = "body">
 	<div class = "box">
   <p class = "articleText" align="left"> 
+
+    <?php 
+       $name="lr123";
+       $login=$_GET["username"];
+       $pass="12345";
+       echo $_GET["password"];
+       if ($name == $login && (!isset($_GET["password"]) || $_GET["password"] != $pass)) {
+       header( 'Location: http://csserver.evansville.edu/~nm112/cs350/JourneyJournal/posts.html' ) ;
+       } ?>
+
   	Hi  <font color='red'><?php
 	if (!isset($_GET["username"])) {
 	?><meta http-equiv="refresh" content="0; url=http://csserver.evansville.edu/~nm112/cs350/JourneyJournal/login.html" />
@@ -45,7 +55,7 @@
 
    
 
-<center><p>&#169 Team Awesome 2014</p></center>\	
+<center><p>&#169 Team Awesome 2014</p></center>	
 </body>
 </html>
 

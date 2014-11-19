@@ -15,13 +15,12 @@
     <img src="logo.png"   style="width:100%;height:100%">
   </p>
 
-	<center><form  align="middle" action="main.php" method="GET">
+	<center><form  align="middle" action="main.php" method="GETT">
 	    <p class="color">Please choose a nickname then click 'Log in' in order to access the webpage</p>
-	    <label class = "label">Nickname:</label>
-	    <label class = "input" type = "text" name = "username" value = "lr123" required>
-	    <p><label class = "label">Password:</label>
+	    <label class = "label">Password:</label>
 	    <input class = "input" type = "password" name="password" required>
-	    <input class = "subBtn" type = "submit" value="Log In"><br></p>
+	    <input class = "subBtn" type = "submit" value="Log In"><br>
+	    <p><input class = "input" type = "hidden" name = "username" value = "lr123"></p>
 	</form></center>
 	</div>
 
